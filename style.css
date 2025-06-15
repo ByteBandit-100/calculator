@@ -1,0 +1,75 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top right, rgb(191, 0, 244),rgb(249, 30, 30)) ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.695);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.calc-box{
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    background-color: rgb(40, 38, 38);
+    padding: 20px;
+}
+input{
+    width: 400px;
+    height: 70px;
+    background-color: rgb(34, 33, 33);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 2rem;
+    padding: 5px 7px;
+}
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#clear-btn{
+    background-color: orange;
+    color: white;
+}
+#clear-btn:hover{
+    background-color: rgba(255, 166, 0, 0.773);
+    transition: 0.2s;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.775);
+    transition: 0.2s;
+}
+.operator-btn{
+    background-color: rgb(55, 255, 0) ;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.operator-btn:hover{
+    background-color: rgba(55, 255, 0, 0.807);
+    transition: 0.2s;
+}
